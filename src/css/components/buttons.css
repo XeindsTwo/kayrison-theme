@@ -1,0 +1,96 @@
+.yourThread_2094912 .btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-xl);
+  min-height: 84px;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.3s ease;
+}
+
+.yourThread_2094912 .btn::before,
+.yourThread_2094912 .btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.yourThread_2094912 .btn::after {
+  opacity: 0;
+  transition: opacity 0.35s ease, background-position 0.45s ease;
+  background-size: 140% 140%;
+  background-position: 50% 35%;
+}
+
+.yourThread_2094912 .btn:hover {
+  transform: translateY(-1px);
+}
+
+.yourThread_2094912 .btn:hover::after {
+  opacity: 1;
+  background-position: 50% 65%;
+  animation: threadBtnFlow 1.4s ease-in-out infinite alternate;
+}
+
+.yourThread_2094912 .btn:active {
+  transform: translateY(0);
+}
+
+@keyframes threadBtnFlow {
+  0% {
+    background-position: 50% 20%;
+  }
+  100% {
+    background-position: 50% 80%;
+  }
+}
+
+.yourThread_2094912 .btn--panel {
+  width: 100%;
+}
+
+.yourThread_2094912 .btn__icon {
+  font-size: 0.75em;
+  line-height: 1;
+  opacity: 0.95;
+}
+
+.yourThread_2094912 .btn--contact::before,
+.yourThread_2094912 .btn--aml::before {
+  background: linear-gradient(180deg, #434343 0%, #3e3e3e 100%);
+}
+
+.yourThread_2094912 .btn--contact::after,
+.yourThread_2094912 .btn--aml::after {
+  background: linear-gradient(180deg, rgba(67, 67, 67, 0.15) 0%, rgba(104, 104, 104, 0.8) 100%);
+}
+
+.yourThread_2094912 .btn--contact:hover,
+.yourThread_2094912 .btn--aml:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.yourThread_2094912 .btn--site::before {
+  background: linear-gradient(180deg, #6c72ff 0%, #1b24ff 100%);
+}
+
+.yourThread_2094912 .btn--site::after {
+  background: linear-gradient(177deg, rgba(255, 73, 27, 0.9) 0%, rgba(255, 169, 108, 0.95) 100%);
+}
+
+.yourThread_2094912 .btn--site:hover {
+  border-color: rgba(255, 178, 132, 0.8);
+  box-shadow: 0 16px 34px rgba(255, 118, 55, 0.34);
+}

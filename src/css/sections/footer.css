@@ -1,0 +1,205 @@
+.yourThread_2094912 .thread-footer {
+  border-bottom: 0;
+  min-height: 600px;
+  padding: 22px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #07090d;
+  background-image: url("../../../assets/images/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.yourThread_2094912 .thread-footer__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.yourThread_2094912 .thread-footer__head {
+  max-width: 620px;
+  padding-top: 8px;
+}
+
+.yourThread_2094912 .thread-footer__title {
+  margin: 0 0 16px;
+  font-size: 30px;
+  line-height: 0.92;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+
+.yourThread_2094912 .thread-footer__title span {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.yourThread_2094912 .thread-footer__text {
+  margin: 0;
+  max-width: 250px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.1px;
+}
+
+.yourThread_2094912 .thread-footer__brand {
+  flex-shrink: 0;
+  padding-top: 10px;
+  min-width: 132px;
+  text-align: right;
+  font-size: 39px;
+  line-height: 1;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.94);
+  letter-spacing: -0.3px;
+}
+
+.yourThread_2094912 .thread-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.yourThread_2094912 .thread-footer__actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.yourThread_2094912 .thread-footer__actions .btn {
+  min-height: 146px;
+  border-radius: 14px;
+  font-size: 31px;
+}
+
+.yourThread_2094912 .thread-footer__meta {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  min-height: 24px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.yourThread_2094912 .thread-footer__meta::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.24);
+  transform: translateY(-50%);
+}
+
+.yourThread_2094912 .thread-footer__meta span:nth-child(2) {
+  text-align: right;
+}
+
+@media (max-width: 1080px) {
+  .yourThread_2094912 .thread-footer {
+    min-height: 560px;
+  }
+
+  .yourThread_2094912 .thread-footer__title {
+    font-size: 27px;
+  }
+
+  .yourThread_2094912 .thread-footer__text {
+    font-size: 15px;
+  }
+
+  .yourThread_2094912 .thread-footer__brand {
+    font-size: 36px;
+    min-width: 124px;
+  }
+
+  .yourThread_2094912 .thread-footer__actions .btn {
+    min-height: 130px;
+    font-size: 27px;
+  }
+
+  .yourThread_2094912 .thread-footer__meta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .yourThread_2094912 .thread-footer {
+    min-height: 480px;
+    padding: 20px 16px 14px;
+  }
+
+  .yourThread_2094912 .thread-footer__title {
+    font-size: 25px;
+    letter-spacing: -0.7px;
+    line-height: 0.95;
+    margin-bottom: 12px;
+  }
+
+  .yourThread_2094912 .thread-footer__text {
+    font-size: 14px;
+    max-width: 240px;
+  }
+
+  .yourThread_2094912 .thread-footer__brand {
+    font-size: 30px;
+    min-width: 100px;
+  }
+
+  .yourThread_2094912 .thread-footer__actions .btn {
+    min-height: 104px;
+    font-size: 20px;
+  }
+
+  .yourThread_2094912 .thread-footer__meta {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 610px) {
+  .yourThread_2094912 .thread-footer {
+    min-height: 0;
+  }
+
+  .yourThread_2094912 .thread-footer__top {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .yourThread_2094912 .thread-footer__brand {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .yourThread_2094912 .thread-footer__actions {
+    grid-template-columns: 1fr;
+  }
+
+  .yourThread_2094912 .thread-footer__actions .btn {
+    min-height: 84px;
+    font-size: 20px;
+  }
+
+  .yourThread_2094912 .thread-footer__meta {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    font-size: 12px;
+    min-height: 0;
+  }
+
+  .yourThread_2094912 .thread-footer__meta span:nth-child(2) {
+    text-align: left;
+  }
+
+  .yourThread_2094912 .thread-footer__meta::before {
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+﻿.yourThread_2094912 .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-xl);
+  min-height: 84px;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  transition: transform 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.yourThread_2094912 .btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.yourThread_2094912 .btn--panel {
+  width: 100%;
+}
+
+.yourThread_2094912 .btn--contact,
+.yourThread_2094912 .btn--aml {
+  background: linear-gradient(120deg, #4e4e4e 0%, #3d3d3d 45%, #5b5b5b 100%);
+}
+
+.yourThread_2094912 .btn--site {
+  background: linear-gradient(180deg, var(--blue-1) 0%, var(--blue-2) 58%, var(--blue-3) 100%);
+  border-color: rgba(118, 125, 255, 0.55);
+}
