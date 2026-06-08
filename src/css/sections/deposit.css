@@ -1,9 +1,8 @@
 .yourThread_2094912 .deposit {
   min-height: 520px;
-  background:
-    linear-gradient(130deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 48%),
-    linear-gradient(165deg, rgba(255, 255, 255, 0.07) 4%, rgba(255, 255, 255, 0) 37%),
-    linear-gradient(160deg, #4f56ff 0%, #2f3bff 52%, #1e27d8 100%);
+  background-image: url("https://nztcdn.com/files/a9869dc7-8147-4a38-8594-82af7e9b3055.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .yourThread_2094912 .deposit__inner {
@@ -14,29 +13,28 @@
 }
 
 .yourThread_2094912 .deposit .section-title {
-  max-width: 760px;
+  font-weight: 500;
+  max-width: 630px;
   margin-bottom: 12px;
-  font-size: 62px;
-  letter-spacing: -1.4px;
+  font-family: var(--font-condensed);
+  font-size: 52px;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
 }
 
 .yourThread_2094912 .deposit__text {
-  margin: 0 0 30px;
+  margin: 0 0 44px;
   max-width: 430px;
-  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--font-main);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   line-height: 1.35;
 }
 
 .yourThread_2094912 .deposit__sign {
-  margin: 0 0 26px;
-  font-size: 150px;
-  line-height: 1;
-  letter-spacing: 2px;
-  color: #e7cf63;
-  font-style: italic;
-  font-weight: 500;
-  text-shadow: 0 0 18px rgba(231, 207, 99, 0.25);
+  margin: 0 auto 50px;
+  object-position: center;
+  object-fit: cover;
 }
 
 .yourThread_2094912 .deposit__badges {
@@ -55,9 +53,10 @@
   padding: 6px 14px;
   border-radius: 999px;
   background-color: rgba(255, 255, 255, 0.95);
+  font-family: var(--font-main);
   color: #171b2b;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
   border: 1px solid rgba(18, 24, 48, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -66,64 +65,4 @@
 .yourThread_2094912 .deposit__badge:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(8, 12, 42, 0.22);
-}
-
-@media (max-width: 1080px) {
-  .yourThread_2094912 .deposit .section-title {
-    font-size: 52px;
-    letter-spacing: -1px;
-  }
-}
-
-@media (max-width: 768px) {
-  .yourThread_2094912 .deposit {
-    min-height: 480px;
-  }
-
-  .yourThread_2094912 .deposit .section-title {
-    font-size: 38px;
-    max-width: 600px;
-    margin-bottom: 10px;
-  }
-
-  .yourThread_2094912 .deposit__text {
-    margin-bottom: 24px;
-    font-size: 15px;
-  }
-
-  .yourThread_2094912 .deposit__sign {
-    margin-bottom: 22px;
-    font-size: 112px;
-  }
-}
-
-@media (max-width: 480px) {
-  .yourThread_2094912 .deposit {
-    min-height: 440px;
-  }
-
-  .yourThread_2094912 .deposit .section-title {
-    font-size: 31px;
-    letter-spacing: -0.5px;
-  }
-
-  .yourThread_2094912 .deposit__text {
-    font-size: 14px;
-    margin-bottom: 18px;
-  }
-
-  .yourThread_2094912 .deposit__sign {
-    font-size: 86px;
-    letter-spacing: 1px;
-  }
-
-  .yourThread_2094912 .deposit__badges {
-    gap: 7px;
-  }
-
-  .yourThread_2094912 .deposit__badge {
-    min-height: 30px;
-    padding: 6px 12px;
-    font-size: 12px;
-  }
 }

@@ -1,0 +1,21 @@
+<svg width="1080" height="1540" viewBox="0 0 1080 1540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1540" fill="#08090B"/>
+  <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(520 620) rotate(90) scale(690 760)">
+    <stop stop-color="#FFFFFF" stop-opacity="0.12"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1080" height="1540" fill="url(#glow)"/>
+  <polygon points="0,0 392,292 220,445 0,420" fill="#FFFFFF" fill-opacity="0.24"/>
+  <polygon points="392,292 770,120 1080,0 688,482" fill="#FFFFFF" fill-opacity="0.12"/>
+  <polygon points="220,445 470,535 468,700 0,585" fill="#FFFFFF" fill-opacity="0.18"/>
+  <polygon points="392,292 688,482 470,535" fill="#FFFFFF" fill-opacity="0.16"/>
+  <polygon points="688,482 1080,118 1080,680 690,680" fill="#FFFFFF" fill-opacity="0.18"/>
+  <polygon points="470,535 690,680 468,700" fill="#FFFFFF" fill-opacity="0.26"/>
+  <polygon points="690,680 1080,680 668,802" fill="#FFFFFF" fill-opacity="0.1"/>
+  <polygon points="0,835 668,1128 1080,902 1080,1268 0,1364" fill="#FFFFFF" fill-opacity="0.12"/>
+  <polygon points="0,1406 438,1540 0,1540" fill="#FFFFFF" fill-opacity="0.28"/>
+  <polygon points="438,1540 668,1128 1080,1280 646,1540" fill="#FFFFFF" fill-opacity="0.18"/>
+  <polygon points="668,1128 1080,902 1080,1280" fill="#FFFFFF" fill-opacity="0.16"/>
+  <line x1="40" y1="1140" x2="1028" y2="1140" stroke="#FFFFFF" stroke-opacity="0.18"/>
+  <line x1="530" y1="1140" x2="530" y2="1468" stroke="#FFFFFF" stroke-opacity="0.12"/>
+</svg>

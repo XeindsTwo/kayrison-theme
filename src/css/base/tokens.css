@@ -1,4 +1,6 @@
-﻿.yourThread_2094912 {
+.yourThread_2094912 {
+  --font-main: "Inter Tight", Arial, sans-serif;
+  --font-condensed: "Roboto Condensed", sans-serif;
   --bg-main: #080a0e;
   --bg-soft: #11141b;
   --bg-panel: #474747;

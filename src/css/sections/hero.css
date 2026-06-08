@@ -7,3 +7,20 @@
   padding: 56px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
+
+.yourThread_2094912 .hero {
+  min-height: 420px;
+}
+
+.yourThread_2094912 .hero__title {
+  margin: 0 0 18px;
+  max-width: 620px;
+  font-family: var(--font-condensed);
+}
+
+.yourThread_2094912 .hero__text {
+  margin: 0;
+  max-width: 420px;
+  font-family: var(--font-main);
+  color: var(--text-dim);
+}
