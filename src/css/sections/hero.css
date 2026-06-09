@@ -1,4 +1,4 @@
-﻿.yourThread_2094912 .hero,
+.yourThread_2094912 .hero,
 .yourThread_2094912 .services,
 .yourThread_2094912 .aml,
 .yourThread_2094912 .systems,
@@ -9,17 +9,90 @@
 }
 
 .yourThread_2094912 .hero {
-  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  padding: 20px;
+  background-color: #08090b;
+  background-image: url("https://nztcdn.com/files/f15f6479-ba21-422c-a34c-3bc6c7f94b18.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.yourThread_2094912 .hero__inner {
+  position: relative;
+  min-height: 480px;
 }
 
 .yourThread_2094912 .hero__title {
-  margin: 0 0 18px;
-  max-width: 620px;
+  max-width: 440px;
+}
+
+.yourThread_2094912 .hero__brand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  font-family: var(--font-main);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.yourThread_2094912 .hero__coin {
+  position: absolute;
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
+.yourThread_2094912 .hero__coin--btc {
+  left: 425px;
+  top: 260px;
+  width: 150px;
+}
+
+.yourThread_2094912 .hero__coin--usdt {
+  right: 250px;
+  top: 130px;
+  width: 178px;
+}
+
+.yourThread_2094912 .hero__bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .yourThread_2094912 .hero__text {
   margin: 0;
-  max-width: 420px;
+  max-width: 320px;
   font-family: var(--font-main);
-  color: var(--text-dim);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
+.yourThread_2094912 .hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.yourThread_2094912 .hero__btn {
+  min-height: 38px;
+  width: auto;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
 }
