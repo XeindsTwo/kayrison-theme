@@ -2,32 +2,10 @@
   position: relative;
   overflow: hidden;
   min-height: 720px;
-  padding: 34px 20px 32px;
-  background:
-    linear-gradient(115deg, rgba(255, 255, 255, 0.11) 0 8%, transparent 8% 18%, rgba(255, 255, 255, 0.08) 18% 24%, transparent 24% 100%),
-    linear-gradient(118deg, transparent 0 42%, rgba(255, 255, 255, 0.09) 42% 48%, transparent 48% 60%, rgba(255, 255, 255, 0.08) 60% 66%, transparent 66% 100%),
-    linear-gradient(160deg, #533eff 0%, #372eff 42%, #211fd4 100%);
-}
-
-.yourThread_2094912 .services::before,
-.yourThread_2094912 .services::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.yourThread_2094912 .services::before {
-  background-image:
-    linear-gradient(116deg, transparent 0 58%, rgba(255, 255, 255, 0.08) 58% 63%, transparent 63%),
-    linear-gradient(116deg, transparent 0 22%, rgba(255, 255, 255, 0.07) 22% 27%, transparent 27%),
-    radial-gradient(circle at 35% 42%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px);
-  background-size: 360px 360px, 310px 310px, 7px 7px;
-  opacity: 0.75;
-}
-
-.yourThread_2094912 .services::after {
-  background: linear-gradient(180deg, rgba(30, 24, 210, 0) 0%, rgba(30, 24, 210, 0.24) 100%);
+  padding: 36px 36px 30px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://nztcdn.com/files/1a8114e0-d55e-40af-8856-221094262582.webp");
 }
 
 .yourThread_2094912 .services__inner {
@@ -46,14 +24,7 @@
 }
 
 .yourThread_2094912 .services__title {
-  margin: 0;
-  max-width: 660px;
-  font-family: var(--font-condensed);
-  font-size: 52px;
-  line-height: 0.98;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-transform: uppercase;
+  max-width: 570px;
 }
 
 .yourThread_2094912 .services__note {
@@ -64,163 +35,6 @@
   line-height: 1.3;
 }
 
-.yourThread_2094912 .services__rates {
-  width: 100%;
+.yourThread_2094912 .services__img {
   margin-top: auto;
-  padding-bottom: 2px;
-}
-
-.yourThread_2094912 .services__rate {
-  width: max-content;
-  max-width: 100%;
-  min-height: 52px;
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  padding: 7px 12px 8px;
-  border: 3px solid #f2da3f;
-  border-radius: 11px;
-  color: #ffffff;
-  font-family: var(--font-condensed);
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 500;
-  text-transform: uppercase;
-  white-space: nowrap;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
-    0 0 10px rgba(242, 218, 63, 0.2);
-}
-
-.yourThread_2094912 .services__rate + .services__rate {
-  margin-top: -3px;
-}
-
-.yourThread_2094912 .services__rate--1 {
-  margin-left: 210px;
-}
-
-.yourThread_2094912 .services__rate--2 {
-  margin-left: 176px;
-}
-
-.yourThread_2094912 .services__rate--3 {
-  margin-left: 142px;
-}
-
-.yourThread_2094912 .services__rate--4 {
-  margin-left: 90px;
-}
-
-.yourThread_2094912 .services__rate--5 {
-  margin-left: 50px;
-}
-
-.yourThread_2094912 .services__rate--6 {
-  margin-left: 0;
-}
-
-.yourThread_2094912 .services__arrow,
-.yourThread_2094912 .services__percent {
-  color: rgba(255, 255, 255, 0.58);
-}
-
-.yourThread_2094912 .services__arrow {
-  margin-left: -2px;
-  font-weight: 400;
-}
-
-@media (max-width: 1080px) {
-  .yourThread_2094912 .services__rate {
-    font-size: 28px;
-  }
-
-  .yourThread_2094912 .services__rate--1 {
-    margin-left: 210px;
-  }
-
-  .yourThread_2094912 .services__rate--2 {
-    margin-left: 176px;
-  }
-
-  .yourThread_2094912 .services__rate--3 {
-    margin-left: 118px;
-  }
-
-  .yourThread_2094912 .services__rate--4 {
-    margin-left: 78px;
-  }
-
-  .yourThread_2094912 .services__rate--5 {
-    margin-left: 38px;
-  }
-}
-
-@media (max-width: 860px) {
-  .yourThread_2094912 .services {
-    min-height: 680px;
-  }
-
-  .yourThread_2094912 .services__top {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .yourThread_2094912 .services__title {
-    font-size: 44px;
-  }
-
-  .yourThread_2094912 .services__note {
-    max-width: 260px;
-  }
-
-  .yourThread_2094912 .services__rate {
-    width: 100%;
-    white-space: normal;
-    font-size: 24px;
-    line-height: 1.08;
-  }
-
-  .yourThread_2094912 .services__rate--1,
-  .yourThread_2094912 .services__rate--2,
-  .yourThread_2094912 .services__rate--3,
-  .yourThread_2094912 .services__rate--4,
-  .yourThread_2094912 .services__rate--5,
-  .yourThread_2094912 .services__rate--6 {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .yourThread_2094912 .services {
-    min-height: 0;
-    padding: 30px 14px 28px;
-  }
-
-  .yourThread_2094912 .services__inner {
-    min-height: 0;
-  }
-
-  .yourThread_2094912 .services__title {
-    font-size: 31px;
-    line-height: 1;
-  }
-
-  .yourThread_2094912 .services__note {
-    font-size: 14px;
-  }
-
-  .yourThread_2094912 .services__rates {
-    margin-top: 80px;
-  }
-
-  .yourThread_2094912 .services__rate {
-    min-height: 44px;
-    gap: 7px;
-    padding: 7px 9px;
-    border-width: 2px;
-    border-radius: 9px;
-    font-size: 18px;
-  }
 }

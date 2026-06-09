@@ -1,5 +1,6 @@
-﻿@import "./base/tokens.css";
+@import "./base/tokens.css";
 @import "./base/thread-base.css";
+@import "./components/title-section.css";
 @import "./components/buttons.css";
 @import "./sections/hero.css";
 @import "./sections/services.css";
