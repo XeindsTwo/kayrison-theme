@@ -56,6 +56,10 @@
   letter-spacing: 0;
 }
 
+.yourThread_2094912 .thread-footer__watermark {
+  display: none;
+}
+
 .yourThread_2094912 .thread-footer__bottom {
   display: flex;
   flex-direction: column;
@@ -103,4 +107,111 @@
   justify-content: flex-end;
   gap: 4px;
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .yourThread_2094912 .thread-footer {
+    position: relative;
+    min-height: 780px;
+    padding: 34px 20px 18px;
+    overflow: hidden;
+    background-position: center;
+  }
+
+  .yourThread_2094912 .thread-footer__watermark {
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin: auto auto 24px;
+    pointer-events: none;
+  }
+
+  .yourThread_2094912 .thread-footer__top,
+  .yourThread_2094912 .thread-footer__bottom {
+    position: relative;
+    z-index: 1;
+  }
+
+  .yourThread_2094912 .thread-footer__top {
+    display: block;
+  }
+
+  .yourThread_2094912 .thread-footer__brand {
+    display: none;
+  }
+
+  .yourThread_2094912 .thread-footer__head {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .yourThread_2094912 .thread-footer__title {
+    margin-bottom: 26px;
+  }
+
+  .yourThread_2094912 .thread-footer__text {
+    max-width: 335px;
+    font-size: 16px;
+    line-height: 1.34;
+    letter-spacing: 0;
+  }
+
+  .yourThread_2094912 .thread-footer__bottom {
+    gap: 18px;
+  }
+
+  .yourThread_2094912 .thread-footer__actions {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .yourThread_2094912 .thread-footer__actions .btn {
+    min-height: 82px;
+    border-radius: 12px;
+  }
+
+  .yourThread_2094912 .thread-footer__meta {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .yourThread_2094912 .thread-footer__meta::before {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .yourThread_2094912 .thread-footer__meta p:first-child {
+    grid-row: 1;
+  }
+
+  .yourThread_2094912 .thread-footer__meta p:nth-child(2) {
+    grid-column: 1;
+    grid-row: 3;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 360px) {
+  .yourThread_2094912 .thread-footer {
+    min-height: 760px;
+    padding: 30px 16px 16px;
+  }
+
+  .yourThread_2094912 .thread-footer__text {
+    font-size: 15px;
+  }
+
+  .yourThread_2094912 .thread-footer__actions .btn {
+    min-height: 78px;
+  }
+}
+
+@media (max-width: 540px) {
+  .yourThread_2094912 .thread-footer__watermark {
+    width: 100%;
+  }
 }

@@ -37,4 +37,145 @@
 
 .yourThread_2094912 .services__img {
   margin-top: auto;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.yourThread_2094912 .services__rates {
+  display: none;
+}
+
+@media (max-width: 959.98px) {
+  .yourThread_2094912 .services {
+    min-height: 760px;
+    padding: 40px 24px 44px;
+    background-position: center;
+  }
+
+  .yourThread_2094912 .services__inner {
+    min-height: 676px;
+  }
+
+  .yourThread_2094912 .services__top {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 24px;
+    text-align: left;
+  }
+
+  .yourThread_2094912 .services__title {
+    max-width: 640px;
+  }
+
+  .yourThread_2094912 .services__note {
+    max-width: 360px;
+    margin-top: 0;
+  }
+
+  .yourThread_2094912 .services__img {
+    display: none;
+  }
+
+  .yourThread_2094912 .services__rates {
+    width: 100%;
+    max-width: none;
+    margin: auto auto 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yourThread_2094912 .services__rate {
+    display: grid;
+    grid-template-columns: 168px minmax(0, 1fr) max-content;
+    align-items: center;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 3px solid rgba(255, 229, 35, 0.9);
+    font-family: var(--font-condensed);
+    font-size: 30px;
+    line-height: 0.9;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .yourThread_2094912 .services__rate:first-child {
+    border-top: 0;
+  }
+
+  .yourThread_2094912 .services__rate-from {
+    white-space: nowrap;
+  }
+
+  .yourThread_2094912 .services__rate-percent {
+    color: rgba(255, 255, 255, 0.72);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 660px) {
+  .yourThread_2094912 .services__title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 560px) {
+  .yourThread_2094912 .services {
+    min-height: 744px;
+    padding: 36px 16px;
+  }
+
+  .yourThread_2094912 .services__inner {
+    min-height: 672px;
+  }
+
+  .yourThread_2094912 .services__top {
+    gap: 23px;
+  }
+
+  .yourThread_2094912 .services__title {
+    max-width: 355px;
+    font-size: 40px;
+  }
+
+  .yourThread_2094912 .services__note {
+    max-width: 330px;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .yourThread_2094912 .services__rates {
+    max-width: none;
+    margin-top: 44px;
+  }
+
+  .yourThread_2094912 .services__rate {
+    grid-template-columns: 122px minmax(0, 1fr) max-content;
+    gap: 8px;
+    padding: 11px 4px 12px;
+    border-bottom-width: 2px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .yourThread_2094912 .services__rate {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  .yourThread_2094912 .services {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .yourThread_2094912 .services__rate {
+    grid-template-columns: 112px minmax(0, 1fr) max-content;
+    gap: 7px;
+    font-size: 23px;
+  }
 }

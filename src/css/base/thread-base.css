@@ -16,3 +16,9 @@
   color: inherit;
   text-decoration: none;
 }
+
+.yourThread_2094912 img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
