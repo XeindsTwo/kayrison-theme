@@ -96,3 +96,181 @@
   border-radius: 12px;
   font-size: 13px;
 }
+
+@media (max-width: 960px) {
+  .yourThread_2094912 .hero {
+    min-height: 620px;
+    padding: 24px;
+    background-position: center;
+  }
+
+  .yourThread_2094912 .hero__inner {
+    min-height: 572px;
+  }
+
+  .yourThread_2094912 .hero__title {
+    max-width: 540px;
+  }
+
+  .yourThread_2094912 .hero__brand {
+    transform: scale(0.86);
+    transform-origin: top right;
+  }
+
+  .yourThread_2094912 .hero__coin--btc {
+    left: 34%;
+    top: 315px;
+    width: 142px;
+  }
+
+  .yourThread_2094912 .hero__coin--usdt {
+    right: 12%;
+    top: 205px;
+    width: 168px;
+  }
+
+  .yourThread_2094912 .hero__bottom {
+    align-items: flex-start;
+  }
+
+  .yourThread_2094912 .hero__actions {
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .yourThread_2094912 .hero {
+    min-height: 620px;
+    padding: 22px 20px;
+    background-position: 83% center;
+  }
+
+  .yourThread_2094912 .hero__inner {
+    min-height: 576px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yourThread_2094912 .hero__title {
+    max-width: 470px;
+    margin-bottom: 20px;
+  }
+
+  .yourThread_2094912 .hero__brand {
+    display: none;
+  }
+
+  .yourThread_2094912 .hero__bottom {
+    position: static;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .yourThread_2094912 .hero__actions {
+    order: -1;
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-bottom: auto;
+  }
+
+  .yourThread_2094912 .hero__actions .btn--site {
+    order: -1;
+  }
+
+  .yourThread_2094912 .hero__text {
+    max-width: 390px;
+    margin-top: auto;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0;
+  }
+
+  .yourThread_2094912 .hero__coin--btc {
+    left: 16%;
+    top: 330px;
+    width: 138px;
+  }
+
+  .yourThread_2094912 .hero__coin--usdt {
+    right: 10%;
+    top: 230px;
+    width: 156px;
+  }
+}
+
+@media (max-width: 540px) {
+  .yourThread_2094912 .hero {
+    min-height: 560px;
+    padding: 20px;
+    background-position: 56% center;
+  }
+
+  .yourThread_2094912 .hero__inner {
+    min-height: 520px;
+  }
+
+  .yourThread_2094912 .hero__title {
+    max-width: 335px;
+    margin-bottom: 20px;
+    font-size: 37px;
+    line-height: 0.96;
+  }
+
+  .yourThread_2094912 .hero__actions {
+    gap: 8px;
+  }
+
+  .yourThread_2094912 .hero__btn {
+    min-height: 38px;
+    padding: 10px 13px;
+  }
+
+  .yourThread_2094912 .hero__coin--btc {
+    left: 15%;
+    top: 315px;
+    width: 128px;
+  }
+
+  .yourThread_2094912 .hero__coin--usdt {
+    right: 4%;
+    top: 205px;
+    width: 136px;
+  }
+
+  .yourThread_2094912 .hero__text {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 410px) {
+  .yourThread_2094912 .hero {
+    min-height: 552px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .yourThread_2094912 .hero__title {
+    max-width: 320px;
+    font-size: 35px;
+  }
+
+  .yourThread_2094912 .hero__coin--btc {
+    left: 14%;
+    top: 320px;
+    width: 122px;
+  }
+
+  .yourThread_2094912 .hero__coin--usdt {
+    right: 2%;
+    top: 210px;
+    width: 128px;
+  }
+
+  .yourThread_2094912 .hero__text {
+    font-size: 16px;
+  }
+}

@@ -107,7 +107,17 @@
   }
 
   .yourThread_2094912 .services__rate-from {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     white-space: nowrap;
+  }
+
+  .yourThread_2094912 .services__rate-arrow {
+    display: block;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
   }
 
   .yourThread_2094912 .services__rate-percent {
