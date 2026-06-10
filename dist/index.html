@@ -1,13 +1,1619 @@
-﻿<!doctype html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayrison Thread</title>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Roboto+Condensed:wght@500&display=swap"
-      rel="stylesheet">
-  <link rel="stylesheet" href="src/css/style.css">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Roboto+Condensed:wght@500&display=swap");
+
+    .yourThread_2094912 {
+      --font-main: "Inter Tight", Arial, sans-serif;
+      --font-condensed: "Roboto Condensed", sans-serif;
+      --bg-main: #080a0e;
+      --bg-soft: #11141b;
+      --bg-panel: #474747;
+      --text-main: #ffffff;
+      --text-dim: rgba(255, 255, 255, 0.68);
+      --line-soft: rgba(255, 255, 255, 0.1);
+      --blue-1: #6a6ff8;
+      --blue-2: #2d36ff;
+      --blue-3: #1f2af5;
+      --radius-xl: 14px;
+      --radius-xxl: 18px;
+    }
+
+    .yourThread_2094912,
+    .yourThread_2094912 * {
+      box-sizing: border-box;
+    }
+
+    .yourThread_2094912 {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      color: var(--text-main);
+      font-family: var(--font-main);
+      background: linear-gradient(180deg, #0b0e11 0%, #07090c 100%);
+    }
+
+    .yourThread_2094912 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .yourThread_2094912 img {
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .yourThread_2094912 .title-section {
+      margin: 0;
+      font-family: var(--font-condensed);
+      font-size: 52px;
+      line-height: 0.92;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+
+    .yourThread_2094912 .title-section--center {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .yourThread_2094912 .title-section {
+        font-size: 48px;
+        line-height: 0.92;
+        letter-spacing: -0.02em;
+      }
+    }
+
+    @media (max-width: 440px) {
+      .yourThread_2094912 .title-section {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .yourThread_2094912 .title-section {
+        font-size: 38px;
+      }
+    }
+
+    .yourThread_2094912 .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      justify-content: center;
+      border: 1px solid var(--line-soft);
+      border-radius: 12px;
+      min-height: 144px;
+      padding: 14px 20px;
+      font-family: var(--font-main);
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1;
+      color: #ffffff;
+      transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.3s ease;
+    }
+
+    .yourThread_2094912 .btn::before,
+    .yourThread_2094912 .btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      z-index: -1;
+    }
+
+    .yourThread_2094912 .btn::after {
+      opacity: 0;
+      transition: opacity 0.35s ease, background-position 0.45s ease;
+      background-size: 140% 140%;
+      background-position: 50% 35%;
+    }
+
+    .yourThread_2094912 .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .yourThread_2094912 .btn:hover::after {
+      opacity: 1;
+      background-position: 50% 65%;
+      animation: threadBtnFlow 1.4s ease-in-out infinite alternate;
+    }
+
+    .yourThread_2094912 .btn:active {
+      transform: translateY(0);
+    }
+
+    @keyframes threadBtnFlow {
+      0% {
+        background-position: 50% 20%;
+      }
+      100% {
+        background-position: 50% 80%;
+      }
+    }
+
+    .yourThread_2094912 .btn--panel {
+      width: 100%;
+    }
+
+    .yourThread_2094912 .btn--contact::before,
+    .yourThread_2094912 .btn--aml::before {
+      background: linear-gradient(180deg, #434343 0%, #3e3e3e 100%);
+    }
+
+    .yourThread_2094912 .btn--contact::after,
+    .yourThread_2094912 .btn--aml::after {
+      background: linear-gradient(180deg, rgba(67, 67, 67, 0.15) 0%, rgba(104, 104, 104, 0.8) 100%);
+    }
+
+    .yourThread_2094912 .btn--contact:hover,
+    .yourThread_2094912 .btn--aml:hover {
+      border-color: rgba(255, 255, 255, 0.22);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .yourThread_2094912 .btn--site::before {
+      background: linear-gradient(180deg, #6c72ff 0%, #1b24ff 100%);
+    }
+
+    .yourThread_2094912 .btn--site::after {
+      background: linear-gradient(177deg, rgba(255, 73, 27, 0.9) 0%, rgba(255, 169, 108, 0.95) 100%);
+    }
+
+    .yourThread_2094912 .btn--site:hover {
+      border-color: rgba(255, 178, 132, 0.8);
+      box-shadow: 0 16px 34px rgba(255, 118, 55, 0.34);
+    }
+
+    .yourThread_2094912 .hero,
+    .yourThread_2094912 .services,
+    .yourThread_2094912 .aml,
+    .yourThread_2094912 .systems,
+    .yourThread_2094912 .deposit,
+    .yourThread_2094912 .thread-footer {
+      padding: 56px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .yourThread_2094912 .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 520px;
+      padding: 20px;
+      background-color: #08090b;
+      background-image: url("https://nztcdn.com/files/f15f6479-ba21-422c-a34c-3bc6c7f94b18.webp");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .yourThread_2094912 .hero__inner {
+      position: relative;
+      min-height: 480px;
+    }
+
+    .yourThread_2094912 .hero__title {
+      max-width: 440px;
+    }
+
+    .yourThread_2094912 .hero__brand {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      font-family: var(--font-main);
+      color: #fff;
+      font-size: 22px;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .yourThread_2094912 .hero__coin {
+      position: absolute;
+      display: block;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .yourThread_2094912 .hero__coin--btc {
+      left: 425px;
+      top: 260px;
+      width: 150px;
+    }
+
+    .yourThread_2094912 .hero__coin--usdt {
+      right: 250px;
+      top: 130px;
+      width: 178px;
+    }
+
+    .yourThread_2094912 .hero__bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .yourThread_2094912 .hero__text {
+      margin: 0;
+      max-width: 320px;
+      font-family: var(--font-main);
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+    }
+
+    .yourThread_2094912 .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .yourThread_2094912 .hero__btn {
+      min-height: 38px;
+      width: auto;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 960px) {
+      .yourThread_2094912 .hero {
+        min-height: 620px;
+        padding: 24px;
+        background-position: center;
+      }
+
+      .yourThread_2094912 .hero__inner {
+        min-height: 572px;
+      }
+
+      .yourThread_2094912 .hero__title {
+        max-width: 540px;
+      }
+
+      .yourThread_2094912 .hero__brand {
+        transform: scale(0.86);
+        transform-origin: top right;
+      }
+
+      .yourThread_2094912 .hero__coin--btc {
+        left: 34%;
+        top: 315px;
+        width: 142px;
+      }
+
+      .yourThread_2094912 .hero__coin--usdt {
+        right: 12%;
+        top: 205px;
+        width: 168px;
+      }
+
+      .yourThread_2094912 .hero__bottom {
+        align-items: flex-start;
+      }
+
+      .yourThread_2094912 .hero__actions {
+        padding-top: 6px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .yourThread_2094912 .hero {
+        min-height: 620px;
+        padding: 22px 20px;
+        background-position: 83% center;
+      }
+
+      .yourThread_2094912 .hero__inner {
+        min-height: 576px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .yourThread_2094912 .hero__title {
+        max-width: 470px;
+        margin-bottom: 20px;
+      }
+
+      .yourThread_2094912 .hero__brand {
+        display: none;
+      }
+
+      .yourThread_2094912 .hero__bottom {
+        position: static;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+      }
+
+      .yourThread_2094912 .hero__actions {
+        order: -1;
+        flex-wrap: wrap;
+        padding-top: 0;
+        margin-bottom: auto;
+      }
+
+      .yourThread_2094912 .hero__actions .btn--site {
+        order: -1;
+      }
+
+      .yourThread_2094912 .hero__text {
+        max-width: 390px;
+        margin-top: auto;
+        font-size: 16px;
+        line-height: 1.38;
+        letter-spacing: 0;
+      }
+
+      .yourThread_2094912 .hero__coin--btc {
+        left: 16%;
+        top: 330px;
+        width: 138px;
+      }
+
+      .yourThread_2094912 .hero__coin--usdt {
+        right: 10%;
+        top: 230px;
+        width: 156px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .yourThread_2094912 .hero {
+        min-height: 560px;
+        padding: 20px;
+        background-position: 56% center;
+      }
+
+      .yourThread_2094912 .hero__inner {
+        min-height: 520px;
+      }
+
+      .yourThread_2094912 .hero__title {
+        max-width: 335px;
+        margin-bottom: 20px;
+        font-size: 37px;
+        line-height: 0.96;
+      }
+
+      .yourThread_2094912 .hero__actions {
+        gap: 8px;
+      }
+
+      .yourThread_2094912 .hero__btn {
+        min-height: 38px;
+        padding: 10px 13px;
+      }
+
+      .yourThread_2094912 .hero__coin--btc {
+        left: 15%;
+        top: 315px;
+        width: 128px;
+      }
+
+      .yourThread_2094912 .hero__coin--usdt {
+        right: 4%;
+        top: 205px;
+        width: 136px;
+      }
+
+      .yourThread_2094912 .hero__text {
+        max-width: 340px;
+      }
+    }
+
+    @media (max-width: 410px) {
+      .yourThread_2094912 .hero {
+        min-height: 552px;
+        padding-right: 18px;
+        padding-left: 18px;
+      }
+
+      .yourThread_2094912 .hero__title {
+        max-width: 320px;
+        font-size: 35px;
+      }
+
+      .yourThread_2094912 .hero__coin--btc {
+        left: 14%;
+        top: 320px;
+        width: 122px;
+      }
+
+      .yourThread_2094912 .hero__coin--usdt {
+        right: 2%;
+        top: 210px;
+        width: 128px;
+      }
+
+      .yourThread_2094912 .hero__text {
+        font-size: 16px;
+      }
+    }
+
+    .yourThread_2094912 .services {
+      position: relative;
+      overflow: hidden;
+      min-height: 720px;
+      padding: 36px 36px 30px 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://nztcdn.com/files/1a8114e0-d55e-40af-8856-221094262582.webp");
+    }
+
+    .yourThread_2094912 .services__inner {
+      position: relative;
+      z-index: 1;
+      min-height: 654px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .yourThread_2094912 .services__top {
+      display: grid;
+      grid-template-columns: minmax(0, 660px) 250px;
+      justify-content: space-between;
+      gap: 34px;
+    }
+
+    .yourThread_2094912 .services__title {
+      max-width: 570px;
+    }
+
+    .yourThread_2094912 .services__note {
+      margin: 5px 0 0;
+      font-family: var(--font-main);
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    .yourThread_2094912 .services__img {
+      margin-top: auto;
+      object-position: center;
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+
+    .yourThread_2094912 .services__rates {
+      display: none;
+    }
+
+    @media (max-width: 959.98px) {
+      .yourThread_2094912 .services {
+        min-height: 760px;
+        padding: 40px 24px 44px;
+        background-position: center;
+      }
+
+      .yourThread_2094912 .services__inner {
+        min-height: 676px;
+      }
+
+      .yourThread_2094912 .services__top {
+        grid-template-columns: 1fr;
+        justify-items: start;
+        gap: 24px;
+        text-align: left;
+      }
+
+      .yourThread_2094912 .services__title {
+        max-width: 640px;
+      }
+
+      .yourThread_2094912 .services__note {
+        max-width: 360px;
+        margin-top: 0;
+      }
+
+      .yourThread_2094912 .services__img {
+        display: none;
+      }
+
+      .yourThread_2094912 .services__rates {
+        width: 100%;
+        max-width: none;
+        margin: auto auto 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .yourThread_2094912 .services__rate {
+        display: grid;
+        grid-template-columns: 168px minmax(0, 1fr) max-content;
+        align-items: center;
+        gap: 18px;
+        padding: 16px 0;
+        border-bottom: 3px solid rgba(255, 229, 35, 0.9);
+        font-family: var(--font-condensed);
+        font-size: 30px;
+        line-height: 0.9;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+
+      .yourThread_2094912 .services__rate:first-child {
+        border-top: 0;
+      }
+
+      .yourThread_2094912 .services__rate-from {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        white-space: nowrap;
+      }
+
+      .yourThread_2094912 .services__rate-arrow {
+        display: block;
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+      }
+
+      .yourThread_2094912 .services__rate-percent {
+        color: rgba(255, 255, 255, 0.72);
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 660px) {
+      .yourThread_2094912 .services__title {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .yourThread_2094912 .services {
+        min-height: 744px;
+        padding: 36px 16px;
+      }
+
+      .yourThread_2094912 .services__inner {
+        min-height: 672px;
+      }
+
+      .yourThread_2094912 .services__top {
+        gap: 23px;
+      }
+
+      .yourThread_2094912 .services__title {
+        max-width: 355px;
+        font-size: 40px;
+      }
+
+      .yourThread_2094912 .services__note {
+        max-width: 330px;
+        font-size: 16px;
+        line-height: 1.3;
+      }
+
+      .yourThread_2094912 .services__rates {
+        max-width: none;
+        margin-top: 44px;
+      }
+
+      .yourThread_2094912 .services__rate {
+        grid-template-columns: 122px minmax(0, 1fr) max-content;
+        gap: 8px;
+        padding: 11px 4px 12px;
+        border-bottom-width: 2px;
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .yourThread_2094912 .services__rate {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .yourThread_2094912 .services {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      .yourThread_2094912 .services__rate {
+        grid-template-columns: 112px minmax(0, 1fr) max-content;
+        gap: 7px;
+        font-size: 23px;
+      }
+    }
+
+    .yourThread_2094912 .case-systems {
+      min-height: 1540px;
+      padding: 0 0 70px;
+      background-color: #08090b;
+      background-image: url("https://nztcdn.com/files/115ed0db-2bce-40ad-a504-c8eaeac86438.webp");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
+
+    .yourThread_2094912 .case-systems__aml {
+      position: relative;
+      min-height: 790px;
+      padding-top: 42px;
+    }
+
+    .yourThread_2094912 .case-systems__intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 230px;
+    }
+
+    .yourThread_2094912 .case-systems__left {
+      max-width: 350px;
+    }
+
+    .yourThread_2094912 .case-systems__title {
+      margin: 0 0 24px;
+    }
+
+    .yourThread_2094912 .case-systems__text,
+    .yourThread_2094912 .case-systems__hint p {
+      margin: 0;
+      max-width: 320px;
+      font-family: var(--font-main);
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+
+    .yourThread_2094912 .case-systems__decor {
+      position: absolute;
+      top: 304px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .yourThread_2094912 .case-systems__hint {
+      max-width: 258px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .yourThread_2094912 .case-systems__bottom {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+
+    .yourThread_2094912 .case-systems__hint p {
+      max-width: 200px;
+    }
+
+    .yourThread_2094912 .case-systems__icon {
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .yourThread_2094912 .case-systems__aml-btn {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 12px;
+      max-width: max-content;
+      border-radius: 12px;
+      color: #fff;
+      font-family: var(--font-main);
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(118, 125, 255, 0.55);
+      background: transparent;
+      box-shadow: 0 10px 24px rgba(40, 50, 255, 0.28);
+      transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.3s ease;
+    }
+
+    .yourThread_2094912 .case-systems__aml-btn::before,
+    .yourThread_2094912 .case-systems__aml-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      z-index: -1;
+    }
+
+    .yourThread_2094912 .case-systems__aml-btn::before {
+      background: linear-gradient(180deg, #6c72ff 0%, #1b24ff 100%);
+    }
+
+    .yourThread_2094912 .case-systems__aml-btn::after {
+      opacity: 0;
+      background: linear-gradient(177deg, rgba(255, 73, 27, 0.9) 0%, rgba(255, 169, 108, 0.95) 100%);
+      background-size: 140% 140%;
+      background-position: 50% 35%;
+      transition: opacity 0.35s ease, background-position 0.45s ease;
+    }
+
+    .yourThread_2094912 .case-systems__aml-btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 178, 132, 0.8);
+      box-shadow: 0 16px 34px rgba(255, 118, 55, 0.34);
+    }
+
+    .yourThread_2094912 .case-systems__aml-btn:hover::after {
+      opacity: 1;
+      background-position: 50% 65%;
+      animation: threadBtnFlow 1.4s ease-in-out infinite alternate;
+    }
+
+    .yourThread_2094912 .case-systems__aml-btn:active {
+      transform: translateY(0);
+    }
+
+    .yourThread_2094912 .case-systems__payments {
+      padding-top: 38px;
+    }
+
+    .yourThread_2094912 .case-systems__payments-title {
+      max-width: 690px;
+      margin: 0 auto 95px;
+    }
+
+    .yourThread_2094912 .case-systems__table {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 64px;
+      padding: 0 48px 20px;
+    }
+
+    .yourThread_2094912 .case-systems__table::before {
+      display: none;
+    }
+
+    .yourThread_2094912 .case-systems__table-lines {
+      content: "";
+      position: absolute;
+      inset: 44px 48px 0;
+      pointer-events: none;
+      background: linear-gradient(rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.14)) center top / 100% 1px no-repeat,
+      linear-gradient(rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.14)) center bottom / 100% 1px no-repeat,
+      linear-gradient(rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.14)) center top / 1px 100% no-repeat;
+    }
+
+    .yourThread_2094912 .case-systems__table-label {
+      margin: 0 0 32px;
+      font-family: var(--font-main);
+      color: rgba(255, 255, 255, 0.48);
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    .yourThread_2094912 .case-systems__column {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+    }
+
+    .yourThread_2094912 .case-systems__column--right .case-systems__table-label {
+      text-align: right;
+    }
+
+    .yourThread_2094912 .case-systems__row {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      align-items: center;
+      gap: 28px;
+      min-height: 38px;
+    }
+
+    .yourThread_2094912 .case-systems__column--right .case-systems__row {
+      grid-template-columns: 42px minmax(0, 1fr);
+    }
+
+    .yourThread_2094912 .case-systems__row svg {
+      display: block;
+    }
+
+    .yourThread_2094912 .case-systems__row p {
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+      gap: 12px;
+      margin: 0;
+      font-family: var(--font-condensed);
+      color: #fff;
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .yourThread_2094912 .case-systems__column--right .case-systems__row p {
+      justify-content: flex-end;
+    }
+
+    .yourThread_2094912 .case-systems__row p span:nth-child(2) {
+      color: rgba(255, 255, 255, 0.62);
+    }
+
+    @media (max-width: 960px) {
+      .yourThread_2094912 .case-systems {
+        min-height: auto;
+        padding-bottom: 60px;
+        background-position: center top;
+      }
+
+      .yourThread_2094912 .case-systems__aml {
+        min-height: 720px;
+        padding-top: 42px;
+      }
+
+      .yourThread_2094912 .case-systems__intro {
+        align-items: flex-start;
+        margin-right: 24px;
+        margin-left: 24px;
+        margin-bottom: 210px;
+        gap: 40px;
+      }
+
+      .yourThread_2094912 .case-systems__left {
+        max-width: 390px;
+      }
+
+      .yourThread_2094912 .case-systems__decor {
+        top: 292px;
+        width: 260px;
+        height: auto;
+      }
+
+      .yourThread_2094912 .case-systems__bottom {
+        margin-right: 24px;
+      }
+
+      .yourThread_2094912 .case-systems__payments {
+        padding-top: 70px;
+      }
+
+      .yourThread_2094912 .case-systems__payments-title {
+        max-width: 700px;
+        margin-bottom: 72px;
+      }
+
+      .yourThread_2094912 .case-systems__table {
+        gap: 36px;
+        padding: 0 24px 20px;
+      }
+
+      .yourThread_2094912 .case-systems__table-lines {
+        inset: 44px 24px 0;
+      }
+
+      .yourThread_2094912 .case-systems__row {
+        grid-template-columns: 118px minmax(0, 1fr);
+        gap: 20px;
+      }
+
+      .yourThread_2094912 .case-systems__column--right .case-systems__row {
+        grid-template-columns: 40px minmax(0, 1fr);
+      }
+
+      .yourThread_2094912 .case-systems__row svg {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .yourThread_2094912 .case-systems__row p {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .yourThread_2094912 .case-systems__aml {
+        min-height: 780px;
+        padding-top: 40px;
+      }
+
+      .yourThread_2094912 .case-systems__intro {
+        display: block;
+        margin: 0 20px;
+      }
+
+      .yourThread_2094912 .case-systems__left {
+        max-width: 420px;
+      }
+
+      .yourThread_2094912 .case-systems__title {
+        max-width: 390px;
+      }
+
+      .yourThread_2094912 .case-systems__decor {
+        top: 300px;
+        left: auto;
+        right: 16px;
+        width: 300px;
+        transform: none;
+      }
+
+      .yourThread_2094912 .case-systems__hint--top {
+        margin-top: 205px;
+      }
+
+      .yourThread_2094912 .case-systems__bottom {
+        margin: 48px 20px 0;
+      }
+
+      .yourThread_2094912 .case-systems__payments {
+        padding-top: 78px;
+      }
+
+      .yourThread_2094912 .case-systems__payments-title {
+        max-width: 460px;
+        margin: 0 20px 60px;
+        text-align: left;
+      }
+
+      .yourThread_2094912 .case-systems__table {
+        grid-template-columns: 1fr;
+        gap: 46px;
+        padding: 0 20px;
+      }
+
+      .yourThread_2094912 .case-systems__table-lines {
+        display: none;
+      }
+
+      .yourThread_2094912 .case-systems__column--right .case-systems__table-label {
+        text-align: left;
+      }
+
+      .yourThread_2094912 .case-systems__column--right .case-systems__row p {
+        text-align: right;
+        justify-content: flex-end;
+      }
+
+      .yourThread_2094912 .case-systems__column--right .case-systems__table-label {
+        margin-top: 12px;
+      }
+
+      .yourThread_2094912 .case-systems__column {
+        gap: 18px;
+      }
+
+      .yourThread_2094912 .case-systems__table-label {
+        margin-bottom: 16px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+      }
+
+      .yourThread_2094912 .case-systems__row {
+        grid-template-columns: minmax(112px, 40%) minmax(0, 1fr);
+        gap: 18px;
+      }
+
+      .yourThread_2094912 .case-systems__column--right .case-systems__row {
+        grid-template-columns: 44px minmax(0, 1fr);
+      }
+
+      .yourThread_2094912 .case-systems__row p {
+        justify-content: flex-end;
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .yourThread_2094912 .case-systems__column:not(.case-systems__column--right) .case-systems__row svg {
+        width: auto;
+        max-width: none;
+        max-height: none;
+        justify-self: start;
+        transform: scale(0.82);
+        transform-origin: left center;
+      }
+
+      .yourThread_2094912 .case-systems__column--right .case-systems__row svg {
+        width: 32px;
+        max-height: 32px;
+      }
+
+      .yourThread_2094912 .case-systems__row svg {
+        justify-self: start;
+      }
+    }
+
+    @media (max-width: 610px) {
+      .yourThread_2094912 .case-systems__aml {
+        min-height: auto;
+      }
+
+      .yourThread_2094912 .case-systems__decor {
+        width: 250px;
+        right: 26px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .yourThread_2094912 .case-systems {
+        padding-bottom: 0;
+        background-position: 50% top;
+      }
+
+      .yourThread_2094912 .case-systems__aml {
+        padding-top: 40px;
+      }
+
+      .yourThread_2094912 .case-systems__title {
+        margin-bottom: 24px;
+      }
+
+      .yourThread_2094912 .case-systems__text,
+      .yourThread_2094912 .case-systems__hint p {
+        max-width: 335px;
+        font-size: 16px;
+        line-height: 1.34;
+        letter-spacing: 0;
+      }
+
+      .yourThread_2094912 .case-systems__decor {
+        top: 280px;
+        width: 220px;
+        right: 12px;
+      }
+
+      .yourThread_2094912 .case-systems__hint {
+        max-width: 210px;
+      }
+
+      .yourThread_2094912 .case-systems__hint--top {
+        margin-top: 180px;
+      }
+
+      .yourThread_2094912 .case-systems__icon {
+        margin-bottom: 24px;
+      }
+
+      .yourThread_2094912 .case-systems__bottom {
+        margin-top: 48px;
+      }
+
+      .yourThread_2094912 .case-systems__aml-btn {
+        margin-top: 24px;
+      }
+
+      .yourThread_2094912 .case-systems__payments {
+        padding-top: 100px;
+      }
+
+      .yourThread_2094912 .case-systems__payments-title {
+        max-width: 350px;
+        margin-bottom: 58px;
+      }
+
+      .yourThread_2094912 .case-systems__table {
+        gap: 30px;
+        padding: 0 20px 56px;
+      }
+
+      .yourThread_2094912 .case-systems__column {
+        gap: 17px;
+      }
+
+      .yourThread_2094912 .case-systems__table-label {
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+
+      .yourThread_2094912 .case-systems__row {
+        grid-template-columns: 122px minmax(0, 1fr);
+        gap: 16px;
+        min-height: 36px;
+      }
+
+      .yourThread_2094912 .case-systems__column--right .case-systems__row {
+        grid-template-columns: 44px minmax(0, 1fr);
+      }
+
+      .yourThread_2094912 .case-systems__row p {
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .yourThread_2094912 .case-systems__row p {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .yourThread_2094912 .case-systems__row {
+        grid-template-columns: 112px minmax(0, 1fr);
+        gap: 12px;
+      }
+
+      .yourThread_2094912 .case-systems__row p {
+        gap: 8px;
+        font-size: 21px;
+      }
+    }
+
+
+    .yourThread_2094912 .deposit {
+      min-height: 520px;
+      background-image: url("https://nztcdn.com/files/ef0c01dd-7abd-4e3a-9a07-79bdcb2553ce.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .yourThread_2094912 .deposit__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .yourThread_2094912 .deposit__title {
+      max-width: 630px;
+      margin-bottom: 12px;
+    }
+
+    .yourThread_2094912 .deposit__text {
+      margin: 0 0 44px;
+      max-width: 430px;
+      font-family: var(--font-main);
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .yourThread_2094912 .deposit__sign {
+      margin: 0 auto 50px;
+      object-position: center;
+      object-fit: cover;
+    }
+
+    .yourThread_2094912 .deposit__badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      max-width: 530px;
+    }
+
+    .yourThread_2094912 .deposit__badge {
+      position: relative;
+      overflow: hidden;
+      gap: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 9px 14px;
+      border-radius: 12px;
+      background-color: white;
+      font-family: var(--font-main);
+      color: #101010;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1;
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      transition: background-color 0.35s, color .35s, border .35s;
+    }
+
+    .yourThread_2094912 .deposit__badge svg * {
+      transition: all .35s;
+    }
+
+    .yourThread_2094912 .deposit__badge:hover {
+      border-color: white;
+      background-color: transparent;
+      color: white;
+    }
+
+    .yourThread_2094912 .deposit__badge:hover svg path {
+      fill: white;
+    }
+
+    .yourThread_2094912 .deposit__badge--lolz {
+      isolation: isolate;
+    }
+
+    .yourThread_2094912 .deposit__badge--lolz::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: 0;
+      background: linear-gradient(115deg, rgba(115, 73, 0, 0.25) 0%, rgba(255, 220, 92, 0.95) 34%, rgba(255, 246, 172, 1) 52%, rgba(226, 165, 34, 0.92) 100%),
+      radial-gradient(circle at 18% 50%, rgba(116, 66, 0, 0.55) 0%, transparent 30%);
+      background-size: 180% 180%;
+      background-position: 20% 50%;
+      transition: opacity 0.35s ease, background-position 0.5s ease;
+    }
+
+    .yourThread_2094912 .deposit__badge--lolz::after {
+      content: "";
+      position: absolute;
+      top: -40%;
+      left: -60%;
+      z-index: -1;
+      width: 70%;
+      height: 180%;
+      opacity: 0;
+      background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.55) 50%, transparent 100%);
+      transform: rotate(12deg);
+    }
+
+    .yourThread_2094912 .deposit__badge--lolz:hover {
+      border-color: rgba(255, 232, 130, 0.95);
+      color: rgba(70, 43, 0, 0.9);
+      background-color: #f7d85d;
+      box-shadow: 0 10px 24px rgba(214, 160, 34, 0.34);
+    }
+
+    .yourThread_2094912 .deposit__badge--lolz:hover::before {
+      opacity: 1;
+      background-position: 80% 50%;
+      animation: lolzGoldFlow 1.8s ease-in-out infinite alternate;
+    }
+
+    .yourThread_2094912 .deposit__badge--lolz:hover::after {
+      opacity: 1;
+      animation: lolzGoldShine 1.25s ease-out infinite;
+    }
+
+    .yourThread_2094912 .deposit__badge--lolz:hover svg path {
+      fill: rgba(70, 43, 0, 0.9);
+    }
+
+    @keyframes lolzGoldFlow {
+      0% {
+        background-position: 15% 50%;
+      }
+      100% {
+        background-position: 85% 50%;
+      }
+    }
+
+    @keyframes lolzGoldShine {
+      0% {
+        left: -70%;
+      }
+      70%,
+      100% {
+        left: 115%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .yourThread_2094912 .deposit {
+        min-height: auto;
+        padding: 36px 20px 42px;
+        background-position: center;
+      }
+
+      .yourThread_2094912 .deposit__inner {
+        align-items: center;
+        text-align: center;
+      }
+
+      .yourThread_2094912 .deposit__title {
+        max-width: 360px;
+        margin-bottom: 26px;
+        text-align: center;
+      }
+
+      .yourThread_2094912 .deposit__text {
+        max-width: 330px;
+        margin-bottom: 62px;
+        font-size: 16px;
+        line-height: 1.36;
+      }
+
+      .yourThread_2094912 .deposit__sign {
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+        margin: 0 auto 52px;
+        object-fit: contain;
+      }
+
+      .yourThread_2094912 .deposit__badges {
+        justify-content: center;
+        gap: 8px;
+        max-width: 330px;
+      }
+
+      .yourThread_2094912 .deposit__badge {
+        min-height: 32px;
+        padding: 9px 13px;
+        border-radius: 10px;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .yourThread_2094912 .deposit__inner {
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .yourThread_2094912 .deposit__title {
+        text-align: left;
+      }
+
+      .yourThread_2094912 .deposit__badges {
+        justify-content: flex-start;
+      }
+
+      .yourThread_2094912 .deposit__sign {
+        max-width: 400px;
+        margin-bottom: 46px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .yourThread_2094912 .deposit {
+        padding: 34px 18px 38px;
+      }
+
+      .yourThread_2094912 .deposit__title {
+        max-width: 330px;
+        margin-bottom: 24px;
+      }
+
+      .yourThread_2094912 .deposit__text {
+        max-width: 310px;
+        margin-bottom: 54px;
+      }
+
+      .yourThread_2094912 .deposit__sign {
+        max-width: 330px;
+        margin-bottom: 52px;
+      }
+    }
+
+    .yourThread_2094912 .thread-footer {
+      border-bottom: 0;
+      min-height: 600px;
+      padding: 22px 20px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #07090d;
+      background-image: url("https://nztcdn.com/files/559d1058-7c8c-46cd-aa79-fe2cee047803.webp");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .yourThread_2094912 .thread-footer__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .yourThread_2094912 .thread-footer__head {
+      max-width: 620px;
+      padding-top: 8px;
+    }
+
+    .yourThread_2094912 .thread-footer__title {
+      margin: 0 0 24px;
+    }
+
+    .yourThread_2094912 .thread-footer__title span {
+      display: block;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .yourThread_2094912 .thread-footer__text {
+      margin: 0;
+      max-width: 320px;
+      font-family: var(--font-main);
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+    }
+
+    .yourThread_2094912 .thread-footer__brand {
+      flex-shrink: 0;
+      padding-top: 10px;
+      min-width: 132px;
+      text-align: right;
+      font-family: var(--font-main);
+      font-size: 39px;
+      line-height: 1;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.94);
+      letter-spacing: 0;
+    }
+
+    .yourThread_2094912 .thread-footer__watermark {
+      display: none;
+    }
+
+    .yourThread_2094912 .thread-footer__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .yourThread_2094912 .thread-footer__actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .yourThread_2094912 .thread-footer__meta {
+      display: grid;
+      grid-template-columns: max-content minmax(80px, 1fr) max-content;
+      align-items: center;
+      gap: 20px;
+      font-family: var(--font-main);
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .yourThread_2094912 .thread-footer__meta::before {
+      content: "";
+      grid-column: 2;
+      grid-row: 1;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.24);
+    }
+
+    .yourThread_2094912 .thread-footer__meta p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      min-width: 0;
+    }
+
+    .yourThread_2094912 .thread-footer__meta p:nth-child(2) {
+      grid-column: 3;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      text-align: right;
+    }
+
+    @media (max-width: 768px) {
+      .yourThread_2094912 .thread-footer {
+        position: relative;
+        min-height: 780px;
+        padding: 34px 20px 18px;
+        overflow: hidden;
+        background-position: center;
+      }
+
+      .yourThread_2094912 .thread-footer__watermark {
+        display: block;
+        width: 80%;
+        max-width: 100%;
+        height: auto;
+        margin: auto auto 24px;
+        pointer-events: none;
+      }
+
+      .yourThread_2094912 .thread-footer__top,
+      .yourThread_2094912 .thread-footer__bottom {
+        position: relative;
+        z-index: 1;
+      }
+
+      .yourThread_2094912 .thread-footer__top {
+        display: block;
+      }
+
+      .yourThread_2094912 .thread-footer__brand {
+        display: none;
+      }
+
+      .yourThread_2094912 .thread-footer__head {
+        max-width: 100%;
+        padding-top: 0;
+      }
+
+      .yourThread_2094912 .thread-footer__title {
+        margin-bottom: 26px;
+      }
+
+      .yourThread_2094912 .thread-footer__text {
+        max-width: 335px;
+        font-size: 16px;
+        line-height: 1.34;
+        letter-spacing: 0;
+      }
+
+      .yourThread_2094912 .thread-footer__bottom {
+        gap: 18px;
+      }
+
+      .yourThread_2094912 .thread-footer__actions {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .yourThread_2094912 .thread-footer__actions .btn {
+        min-height: 82px;
+        border-radius: 12px;
+      }
+
+      .yourThread_2094912 .thread-footer__meta {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 12px;
+        font-size: 13px;
+      }
+
+      .yourThread_2094912 .thread-footer__meta::before {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .yourThread_2094912 .thread-footer__meta p:first-child {
+        grid-row: 1;
+      }
+
+      .yourThread_2094912 .thread-footer__meta p:nth-child(2) {
+        grid-column: 1;
+        grid-row: 3;
+        justify-content: flex-start;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .yourThread_2094912 .thread-footer {
+        min-height: 760px;
+        padding: 30px 16px 16px;
+      }
+
+      .yourThread_2094912 .thread-footer__text {
+        font-size: 15px;
+      }
+
+      .yourThread_2094912 .thread-footer__actions .btn {
+        min-height: 78px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .yourThread_2094912 .thread-footer__watermark {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="yourThread_2094912">
@@ -56,9 +1662,11 @@
         </svg>
       </a>
 
-      <img class="hero__coin hero__coin--btc" src="https://nztcdn.com/files/19e1980b-5962-4b99-bbb9-f1c94767fb98.webp" width="178" height="156"
+      <img class="hero__coin hero__coin--btc" src="https://nztcdn.com/files/19e1980b-5962-4b99-bbb9-f1c94767fb98.webp"
+           width="178" height="156"
            alt="">
-      <img class="hero__coin hero__coin--usdt" src="https://nztcdn.com/files/979cd85d-2680-49a6-bf56-54c1f76a5edb.webp" width="178"
+      <img class="hero__coin hero__coin--usdt" src="https://nztcdn.com/files/979cd85d-2680-49a6-bf56-54c1f76a5edb.webp"
+           width="178"
            height="156" alt="">
 
       <div class="hero__bottom">
@@ -114,8 +1722,8 @@
       <div class="services__rates" aria-label="Направления обмена">
         <div class="services__rate">
           <span class="services__rate-from">КРИПТА <svg class="services__rate-arrow" width="18" height="18"
-                                                       viewBox="0 0 18 18" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g opacity="0.4">
                 <path d="M18 17.5823H16.8183V2.01715L0.835431 18L0 17.1646L15.9828 1.18172H0.417715V0H18V17.5823Z"
                       fill="white"/>
@@ -127,8 +1735,8 @@
         </div>
         <div class="services__rate">
           <span class="services__rate-from">КРИПТА <svg class="services__rate-arrow" width="18" height="18"
-                                                       viewBox="0 0 18 18" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g opacity="0.4">
                 <path d="M18 17.5823H16.8183V2.01715L0.835431 18L0 17.1646L15.9828 1.18172H0.417715V0H18V17.5823Z"
                       fill="white"/>
@@ -140,8 +1748,8 @@
         </div>
         <div class="services__rate">
           <span class="services__rate-from">КРИПТА <svg class="services__rate-arrow" width="18" height="18"
-                                                       viewBox="0 0 18 18" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g opacity="0.4">
                 <path d="M18 17.5823H16.8183V2.01715L0.835431 18L0 17.1646L15.9828 1.18172H0.417715V0H18V17.5823Z"
                       fill="white"/>
@@ -153,8 +1761,8 @@
         </div>
         <div class="services__rate">
           <span class="services__rate-from">КРИПТА <svg class="services__rate-arrow" width="18" height="18"
-                                                       viewBox="0 0 18 18" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g opacity="0.4">
                 <path d="M18 17.5823H16.8183V2.01715L0.835431 18L0 17.1646L15.9828 1.18172H0.417715V0H18V17.5823Z"
                       fill="white"/>
@@ -166,8 +1774,8 @@
         </div>
         <div class="services__rate">
           <span class="services__rate-from">КРИПТА <svg class="services__rate-arrow" width="18" height="18"
-                                                       viewBox="0 0 18 18" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g opacity="0.4">
                 <path d="M18 17.5823H16.8183V2.01715L0.835431 18L0 17.1646L15.9828 1.18172H0.417715V0H18V17.5823Z"
                       fill="white"/>
@@ -179,8 +1787,8 @@
         </div>
         <div class="services__rate">
           <span class="services__rate-from">КРИПТА <svg class="services__rate-arrow" width="18" height="18"
-                                                       viewBox="0 0 18 18" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g opacity="0.4">
                 <path d="M18 17.5823H16.8183V2.01715L0.835431 18L0 17.1646L15.9828 1.18172H0.417715V0H18V17.5823Z"
                       fill="white"/>
